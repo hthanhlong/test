@@ -1,5 +1,5 @@
 import express, { Application } from 'express'
-import { ENV_CONGIF } from './constant'
+import ENV_CONGIF from './constant'
 import { initDatabase } from './database'
 
 const PORT = ENV_CONGIF.PORT

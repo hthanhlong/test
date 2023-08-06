@@ -1,5 +1,5 @@
 import { Sequelize } from 'sequelize'
-import { ENV_CONGIF } from '../constant'
+import ENV_CONGIF from '../constant'
 
 const sequelize = new Sequelize(
     ENV_CONGIF.DATABASE_NAME,
