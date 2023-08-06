@@ -1,7 +1,7 @@
-import express from 'express'
+import express, { Application } from 'express'
 import { ENV_CONGIF } from './constant'
 
-const app = express()
+const app: Application = express()
 
 const PORT = ENV_CONGIF.PORT
 
