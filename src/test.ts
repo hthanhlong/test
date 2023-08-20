@@ -7,13 +7,12 @@ const myUserSchema = object({
 
 const validateFunc = async () => {
     try {
-        const data = {
+        const data: DemoData = {
             name: 'hello',
             password: 'password',
         }
         const newData = await myUserSchema.validate(data, { strict: true })
         console.log('object :>> ', newData)
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
         console.log('err.errors;  :>> ', error.errors)
     }
