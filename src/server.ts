@@ -11,8 +11,8 @@ import { initDatabase } from './database'
 const PORT = ENV_CONGIF.PORT
 
 const main = async () => {
-    await initDatabase()
     const app: Application = express()
+    await initDatabase()
 
     app.use('/', (req: Request, res: Response): void => {
         res.send('Hello wolrd')
